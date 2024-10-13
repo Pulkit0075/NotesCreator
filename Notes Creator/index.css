@@ -1,0 +1,279 @@
+.montserrat-Montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+#image{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 15, 15);
+}
+.intro{
+    font-family: Helvetica, sans-serif;
+    
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}    
+.intro p{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 5.5vw;
+    text-align: center;
+    animation: animate-float 0.5s ease-out forwards; /* Apply animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+
+}
+.intro h{
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 5.5vw;
+    text-align: center;
+}
+.intro a{
+    color: white;
+}
+@keyframes animate-float {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+.GeNotes{
+    margin-left: 0;
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes scale-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        transform: scale(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transform: scale(100%)
+    }
+  }
+  
+  #Intro {
+
+    animation: 2.5s linear forwards scale-up;
+    animation-timeline: scroll();
+    color: white;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 5.5vw;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    animation: animate-float 0.5s ease-out forwards;
+  }
+
+
+
+  /* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(41, 41, 41);
+  }
+
+
+  #genote_button{
+    margin-top: 0;
+    height: 4.4vh;
+    width: 11vw;
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    animation: animate-float 0.7s ease-out forwards;
+    transition: background-color 0.3s ease-out 100ms
+  }
+
+  #learnMore{
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 1vw;
+    color: white;
+    animation: animate-float 0.8s ease-out forwards;
+
+  }
+
+  #bio1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    width: 60%;
+    font-weight: 100;
+    font-size: 1.5vw;
+    animation: animate-float 1s ease-out forwards;
+    padding-top: 50px;
+  }
+
+  #bio2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    width: 60%;
+    font-weight: 100;
+    font-size: 1.5vw;
+    animation: animate-float 1.2s ease-out forwards;
+    margin-top: 0;
+  }
+
+  #bio3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    width: 60%;
+    font-weight: 100;
+    font-size: 1.5vw;
+    animation: animate-float 1.6s ease-out forwards;
+    margin-top: 0;
+  }
+
+
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    width: 60%;
+    font-weight: bolder;
+    font-size: 1.9vw;
+    animation: animate-float 2s ease-out forwards;
+  }
+
+
+  #genote_button:hover{
+    background-color: rgb(175, 174, 174);
+  }
+
+
+  #learnMore:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+  }
+  #learnMore:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+
+  /* navbar */
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(15, 15, 15);
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbarli a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  @keyframes twistNTurn {
+    50% {transform: rotate(15deg);}
+    
+  }
+
+  .navbar .active{
+    transition: transform 0.5s ease 0s;
+  }
+
+  .navbar .active:hover {
+    transform: rotate(90deg) scale(1.2);
+  }
+
+  #logo{
+    transition: transform 0.3s ease;
+  }
+
+  #logo:hover{
+    transform: rotate(15deg) scale(1.2);
+  }
+
+  .navLink{
+    font-family: montserrat;
+    font-weight: 400;
+    opacity: 70%;
+    transition: opacity 0.3s ease-in-out ;
+  }
+
+  .navLink:hover{
+    opacity: 100%;
+  }
+
+  
